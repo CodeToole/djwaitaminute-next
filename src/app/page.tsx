@@ -1,33 +1,28 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[#050505] text-white">
       {/* Nav */}
       <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-md">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-          <Image
-            src="/logo-wordmark.jpg"
-            alt="DJ Waitaminute"
-            width={220}
-            height={48}
-            className="h-10 w-auto"
-            priority
-          />
+          <span className="font-bold text-2xl tracking-wider uppercase">
+            <span className="text-[#0088ff]">DJ</span>
+            <span className="text-[#ff5a00]">WAITAMINUTE</span>
+          </span>
           <div className="hidden items-center gap-8 md:flex">
-            <Link href="#live" className="text-sm uppercase tracking-wider hover:text-primary">
+            <Link href="#live" className="text-sm uppercase tracking-wider hover:text-[#ff5a00]">
               Live
             </Link>
-            <Link href="#services" className="text-sm uppercase tracking-wider hover:text-primary">
+            <Link href="#services" className="text-sm uppercase tracking-wider hover:text-[#ff5a00]">
               Services
             </Link>
-            <Link href="#about" className="text-sm uppercase tracking-wider hover:text-primary">
+            <Link href="#about" className="text-sm uppercase tracking-wider hover:text-[#ff5a00]">
               About
             </Link>
             <Link
               href="#contact"
-              className="border border-primary px-5 py-2 text-sm font-semibold uppercase tracking-wider text-primary transition hover:bg-primary hover:text-black"
+              className="border border-[#ff5a00] px-5 py-2 text-sm font-semibold uppercase tracking-wider text-[#ff5a00] transition hover:bg-[#ff5a00] hover:text-black"
             >
               Contact
             </Link>
@@ -46,14 +41,14 @@ export default function Home() {
         >
           <source src="/media/djwaitaminutevisz.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/50" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-          <p className="mb-4 font-[family-name:var(--font-display)] text-xl uppercase tracking-[0.25em] text-primary md:text-2xl">
+          <p className="mb-4 text-xl uppercase tracking-[0.25em] text-[#ff5a00] md:text-2xl">
             Drum & Bass • Audio Engineer • Visuals
           </p>
-          <h1 className="mb-6 font-[family-name:var(--font-display)] text-6xl font-bold uppercase leading-none tracking-tight md:text-8xl lg:text-9xl">
-            <span className="text-accent">DJ</span>
-            <span className="text-primary">WAITAMINUTE</span>
+          <h1 className="mb-6 text-6xl font-bold uppercase leading-none tracking-tight md:text-8xl lg:text-9xl">
+            <span className="text-[#0088ff]">DJ</span>
+            <span className="text-[#ff5a00]">WAITAMINUTE</span>
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-300 md:text-xl">
             Immersive sonic experiences from Mobile, AL.
@@ -61,13 +56,13 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="#contact"
-              className="bg-primary px-8 py-4 font-[family-name:var(--font-display)] text-2xl font-bold uppercase tracking-widest text-black shadow-[0_0_20px_rgba(255,90,0,0.45)] transition hover:-translate-y-1 hover:bg-white"
+              className="bg-[#ff5a00] px-8 py-4 text-2xl font-bold uppercase tracking-widest text-black shadow-[0_0_20px_rgba(255,90,0,0.45)] transition hover:-translate-y-1 hover:bg-white"
             >
               Book DJWaitaminute
             </Link>
             <Link
               href="#live"
-              className="border border-gray-500 px-8 py-4 font-[family-name:var(--font-display)] text-2xl font-bold uppercase tracking-widest backdrop-blur-sm transition hover:border-primary hover:text-primary"
+              className="border border-gray-500 px-8 py-4 text-2xl font-bold uppercase tracking-widest backdrop-blur-sm transition hover:border-[#ff5a00] hover:text-[#ff5a00]"
             >
               Watch Live
             </Link>
@@ -76,10 +71,10 @@ export default function Home() {
       </section>
 
       {/* VIP Signup */}
-      <section className="relative border-y border-primary/30 bg-[#111] py-16">
+      <section className="relative border-y border-[#ff5a00]/30 bg-[#111] py-16">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-10 px-6 md:flex-row">
           <div className="md:w-1/2">
-            <h2 className="mb-3 font-[family-name:var(--font-display)] text-4xl font-bold uppercase tracking-wide text-primary md:text-5xl">
+            <h2 className="mb-3 text-4xl font-bold uppercase tracking-wide text-[#ff5a00] md:text-5xl">
               VIP Dubplate Access
             </h2>
             <p className="text-lg text-gray-300">
@@ -91,11 +86,11 @@ export default function Home() {
               type="email"
               required
               placeholder="ENTER YOUR EMAIL"
-              className="w-full border border-gray-700 bg-black px-5 py-4 font-[family-name:var(--font-display)] uppercase tracking-wide text-white placeholder-gray-600 focus:border-primary focus:outline-none"
+              className="w-full border border-gray-700 bg-black px-5 py-4 uppercase tracking-wide text-white placeholder-gray-600 focus:border-[#ff5a00] focus:outline-none"
             />
             <button
               type="submit"
-              className="bg-primary px-10 py-4 font-[family-name:var(--font-display)] text-lg font-bold uppercase tracking-widest text-black transition hover:bg-white"
+              className="bg-[#ff5a00] px-10 py-4 text-lg font-bold uppercase tracking-widest text-black transition hover:bg-white"
             >
               Subscribe
             </button>
@@ -106,13 +101,13 @@ export default function Home() {
       {/* Live */}
       <section id="live" className="bg-[#111] py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
-          <h2 className="mb-4 font-[family-name:var(--font-display)] text-4xl font-bold uppercase text-primary md:text-5xl">
+          <h2 className="mb-4 text-4xl font-bold uppercase text-[#ff5a00] md:text-5xl">
             Live from IN2GROOVERADIO
           </h2>
           <p className="mb-10 text-lg text-gray-300">
             Catch the vibes live from Mobile, AL on the global airwaves.
           </p>
-          <div className="relative mb-10 aspect-video overflow-hidden rounded-lg border-2 border-primary">
+          <div className="relative mb-10 aspect-video overflow-hidden rounded-lg border-2 border-[#ff5a00]">
             <iframe
               src="https://player.kick.com/in2grooveradio"
               className="absolute inset-0 h-full w-full"
@@ -135,7 +130,7 @@ export default function Home() {
       <section id="services" className="py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 font-[family-name:var(--font-display)] text-5xl font-bold uppercase tracking-tighter md:text-6xl">
+            <h2 className="mb-4 text-5xl font-bold uppercase tracking-tighter md:text-6xl">
               Services
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-400">
@@ -150,13 +145,13 @@ export default function Home() {
             ].map((s) => (
               <div
                 key={s.title}
-                className="group border border-gray-800 bg-surface p-8 transition hover:border-primary"
+                className="border border-gray-800 bg-[#111] p-8 transition hover:border-[#ff5a00]"
               >
-                <h3 className="mb-4 font-[family-name:var(--font-display)] text-2xl font-bold uppercase tracking-wide">
+                <h3 className="mb-4 text-2xl font-bold uppercase tracking-wide">
                   {s.title}
                 </h3>
                 <p className="mb-6 text-gray-400">{s.desc}</p>
-                <Link href="#contact" className="font-bold uppercase tracking-wider text-primary hover:text-white">
+                <Link href="#contact" className="font-bold uppercase tracking-wider text-[#ff5a00] hover:text-white">
                   Book Now →
                 </Link>
               </div>
@@ -168,17 +163,11 @@ export default function Home() {
       {/* About */}
       <section id="about" className="bg-[#111] py-24">
         <div className="mx-auto max-w-5xl px-6 text-center">
-          <h2 className="mb-8 font-[family-name:var(--font-display)] text-5xl font-bold uppercase tracking-tighter md:text-6xl">
+          <h2 className="mb-8 text-5xl font-bold uppercase tracking-tighter md:text-6xl">
             About
           </h2>
-          <div className="mx-auto mb-8 max-w-xs">
-            <Image
-              src="/logo-icon.jpg"
-              alt="DJ Waitaminute Icon"
-              width={280}
-              height={280}
-              className="mx-auto"
-            />
+          <div className="mx-auto mb-8 flex h-48 w-48 items-center justify-center rounded-full border-4 border-[#ff5a00] bg-black">
+            <span className="text-6xl font-bold text-[#0088ff]">WM</span>
           </div>
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-300">
             DJ Waitaminute brings high-energy Drum & Bass, Jungle, and electronic sets to the Gulf Coast and beyond. Based in Mobile, AL, he delivers immersive live performances, professional audio engineering, and visuals built for the dancefloor.
@@ -189,7 +178,7 @@ export default function Home() {
       {/* Contact */}
       <section id="contact" className="py-24">
         <div className="mx-auto max-w-3xl px-6">
-          <h2 className="mb-10 text-center font-[family-name:var(--font-display)] text-5xl font-bold uppercase tracking-tighter md:text-6xl">
+          <h2 className="mb-10 text-center text-5xl font-bold uppercase tracking-tighter md:text-6xl">
             Contact
           </h2>
           <form className="space-y-6">
@@ -197,17 +186,17 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full border border-gray-700 bg-black px-5 py-4 text-white placeholder-gray-500 focus:border-primary focus:outline-none"
+                className="w-full border border-gray-700 bg-black px-5 py-4 text-white placeholder-gray-500 focus:border-[#ff5a00] focus:outline-none"
                 required
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full border border-gray-700 bg-black px-5 py-4 text-white placeholder-gray-500 focus:border-primary focus:outline-none"
+                className="w-full border border-gray-700 bg-black px-5 py-4 text-white placeholder-gray-500 focus:border-[#ff5a00] focus:outline-none"
                 required
               />
             </div>
-            <select className="w-full border border-gray-700 bg-black px-5 py-4 text-white focus:border-primary focus:outline-none">
+            <select className="w-full border border-gray-700 bg-black px-5 py-4 text-white focus:border-[#ff5a00] focus:outline-none">
               <option>Event DJing</option>
               <option>Audio Engineering</option>
               <option>Videography</option>
@@ -216,24 +205,24 @@ export default function Home() {
             <textarea
               rows={5}
               placeholder="Message"
-              className="w-full border border-gray-700 bg-black px-5 py-4 text-white placeholder-gray-500 focus:border-primary focus:outline-none"
+              className="w-full border border-gray-700 bg-black px-5 py-4 text-white placeholder-gray-500 focus:border-[#ff5a00] focus:outline-none"
               required
             />
             <button
               type="submit"
-              className="w-full bg-primary py-4 font-[family-name:var(--font-display)] text-xl font-bold uppercase tracking-widest text-black transition hover:bg-white"
+              className="w-full bg-[#ff5a00] py-4 text-xl font-bold uppercase tracking-widest text-black transition hover:bg-white"
             >
               Send Message
             </button>
           </form>
           <div className="mt-12 flex justify-center gap-8 text-sm uppercase tracking-wider">
-            <a href="https://www.instagram.com/djwaitaminute84/" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://www.instagram.com/djwaitaminute84/" target="_blank" rel="noreferrer" className="hover:text-[#ff5a00]">
               Instagram
             </a>
-            <a href="https://www.youtube.com/@DJWaitaminute84" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://www.youtube.com/@DJWaitaminute84" target="_blank" rel="noreferrer" className="hover:text-[#ff5a00]">
               YouTube
             </a>
-            <a href="https://www.mixcloud.com/DjWaitaminutemix/" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://www.mixcloud.com/DjWaitaminutemix/" target="_blank" rel="noreferrer" className="hover:text-[#ff5a00]">
               Mixcloud
             </a>
           </div>

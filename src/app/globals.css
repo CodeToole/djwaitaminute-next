@@ -1,12 +1,10 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-primary: #ff5a00;
   --color-accent: #0088ff;
   --color-background: #050505;
   --color-surface: #111111;
-  --font-display: "Teko", sans-serif;
-  --font-body: "Inter", sans-serif;
 }
 
 html {
@@ -14,7 +12,7 @@ html {
 }
 
 body {
-  background: var(--color-background);
+  background: #050505;
   color: #ededed;
-  font-family: var(--font-body);
+  font-family: system-ui, -apple-system, sans-serif;
 }
