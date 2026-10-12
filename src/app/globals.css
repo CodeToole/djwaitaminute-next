@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff5a00;
+  --color-accent: #0088ff;
+  --color-background: #050505;
+  --color-surface: #111111;
+  --font-display: "Teko", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: #ededed;
+  font-family: var(--font-body);
+}
